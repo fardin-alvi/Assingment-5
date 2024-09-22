@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Flood People</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        btn_color: '#B4F461',
+                        nav_color: '#F9F7F3'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="h-32 bg-nav_color">
+        <nav class="lg:mr-40 lg:ml-40 px-2 flex justify-around lg:justify-between pt-5">
+            <button class="bg-btn_color px-6 py-2 rounded-lg text-xl font-semibold ">Blog</button>
+            <div class="lg:flex justify-center items-center lg:gap-x-3 ">
+                <img src="./assets/logo.png" alt="">
+                <h2 class="text-xl font-semibold hidden lg:flex">Donate Bangladesh</h2>
+            </div>
+            <div class="flex items-center gap-x-2">
+                <img src="./assets/coin.png" alt="">
+                <div class="flex items-center gap-x-1">
+                    <p class="text-xl font-semibold">5500</p>
+                    <p class="text-xl font-semibold">BDT</p>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <section class="lg:mr-40 lg:ml-40 lg:mt-12">
+        <div class="flex items-center gap-x-6">
+            <h1 class="text-5xl font-bold">Important FAQ</h1>
+            <img src="./assets/help.png" alt="" class="h-16 w-auto">
+        </div>
+        <div class="mt-7">
+            <div class="collapse collapse-arrow bg-white border border-gray-300 py-4">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-semibold">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                    <p class="text-lg">
+                        The DOM (Document Object Model) is a programming interface for web documents. It represents the structure of an HTML or XML document as a tree of objects, where each node corresponds to a part of the document, such as elements, attributes, or text.
+                    </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-white border border-gray-300 py-4">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-semibold">How do you Select the Element from the DOM?</div>
+                <div class="collapse-content">
+                    <p class="text-lg">
+                        In DOM, element can be slecet by four Ways. <br>
+                        These are;<br>
+                        1. ByID <br>
+                        2. ByClassName <br>
+                        3. ByTagName <br>
+                        4. ByCSSSelectors such as: querySelector() <br>
+                        5. ByNameAttribute
+                    </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-white border border-gray-300 py-4">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-semibold">What is event delegation in the context of the DOM , and Why is it usefull? </div>
+                <div class="collapse-content">
+                    <p class="text-lg">
+                        Event Delegation is basically a pattern to handle events efficiently. Instead of adding an event listener to each and
+                        every similar element, we can add an event listener to a parent element and call an event on a particular target using
+                        the .target property of the event object. <br>
+                        It is usefull because event delegation allows you to attach a single listener to the parent container.
+                    </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-white border border-gray-300 py-4">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you manupulate an elements attributes and style using the DOM?</div>
+                <div class="collapse-content">
+                    <p class="text-lg">
+                        Basically, each Element object in the DOM has properties and methods that you can use to interact with that element.
+                        <br>
+                        The following are the most common and practical ways you might want to manipulate the Element object: <br>
+                        1. Change the Content of an Element <br>
+                        2. Manipulate the Class Attribute <br>
+                        3. Setting CSS Styles Using JavaScript <br>
+                        4. Create, Add, and Remove Elements <br>
+                        5. Insert Element at a Specific Position <br>
+                        6. Manipulating Element Attributes <br>
+                        7. Manipulating Data Attributes
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
