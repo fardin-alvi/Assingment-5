@@ -21,10 +21,12 @@
         }
     </script>
 </head>
+
 <body>
+    <script src="./JS/index.js"></script>
     <div class="h-32 bg-nav_color">
         <nav class="lg:mr-40 lg:ml-40 px-2 flex justify-around lg:justify-between pt-5">
-            <button class="bg-btn_color px-6 py-2 rounded-lg text-xl font-semibold ">Blog</button>
+            <button id="home-button" class="bg-btn_color px-6 py-2 rounded-lg text-xl font-semibold ">Home</button>
             <div class="lg:flex justify-center items-center lg:gap-x-3 ">
                 <img src="./assets/logo.png" alt="">
                 <h2 class="text-xl font-semibold hidden lg:flex">Donate Bangladesh</h2>
@@ -38,9 +40,9 @@
             </div>
         </nav>
     </div>
-    <section class="lg:mr-40 lg:ml-40 lg:mt-12">
+    <section class="lg:mr-40 px-3 lg:ml-40 lg:mt-12">
         <div class="flex items-center gap-x-6">
-            <h1 class="text-5xl font-bold">Important FAQ</h1>
+            <h1 class="text-3xl lg:text-5xl font-bold">Important FAQ</h1>
             <img src="./assets/help.png" alt="" class="h-16 w-auto">
         </div>
         <div class="mt-7">
@@ -49,7 +51,9 @@
                 <div class="collapse-title text-xl font-semibold">What is the Document Object Model (DOM)?</div>
                 <div class="collapse-content">
                     <p class="text-lg">
-                        The DOM (Document Object Model) is a programming interface for web documents. It represents the structure of an HTML or XML document as a tree of objects, where each node corresponds to a part of the document, such as elements, attributes, or text.
+                        The DOM (Document Object Model) is a programming interface for web documents. It represents the
+                        structure of an HTML or XML document as a tree of objects, where each node corresponds to a part
+                        of the document, such as elements, attributes, or text.
                     </p>
                 </div>
             </div>
@@ -70,24 +74,31 @@
             </div>
             <div class="collapse collapse-arrow bg-white border border-gray-300 py-4">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-semibold">What is event delegation in the context of the DOM , and Why is it usefull? </div>
+                <div class="collapse-title text-xl font-semibold">What is event delegation in the context of the DOM ,
+                    and Why is it usefull? </div>
                 <div class="collapse-content">
                     <p class="text-lg">
-                        Event Delegation is basically a pattern to handle events efficiently. Instead of adding an event listener to each and
-                        every similar element, we can add an event listener to a parent element and call an event on a particular target using
+                        Event Delegation is basically a pattern to handle events efficiently. Instead of adding an event
+                        listener to each and
+                        every similar element, we can add an event listener to a parent element and call an event on a
+                        particular target using
                         the .target property of the event object. <br>
-                        It is usefull because event delegation allows you to attach a single listener to the parent container.
+                        It is usefull because event delegation allows you to attach a single listener to the parent
+                        container.
                     </p>
                 </div>
             </div>
             <div class="collapse collapse-arrow bg-white border border-gray-300 py-4">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">How do you manupulate an elements attributes and style using the DOM?</div>
+                <div class="collapse-title text-xl font-medium">How do you manupulate an elements attributes and style
+                    using the DOM?</div>
                 <div class="collapse-content">
                     <p class="text-lg">
-                        Basically, each Element object in the DOM has properties and methods that you can use to interact with that element.
+                        Basically, each Element object in the DOM has properties and methods that you can use to
+                        interact with that element.
                         <br>
-                        The following are the most common and practical ways you might want to manipulate the Element object: <br>
+                        The following are the most common and practical ways you might want to manipulate the Element
+                        object: <br>
                         1. Change the Content of an Element <br>
                         2. Manipulate the Class Attribute <br>
                         3. Setting CSS Styles Using JavaScript <br>
@@ -100,6 +111,13 @@
             </div>
         </div>
     </section>
+    <script>
+        const homeButton = document.getElementById('home-button')
+        homeButton.addEventListener('click', function () {
+            window.location.assign('index.html');
+        })
+    </script>
+    <!-- <script src="./JS/index.js"></script> -->
 </body>
 
 </html>
