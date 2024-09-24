@@ -15,7 +15,7 @@ document.getElementById('first-donate-button').addEventListener('click', functio
     const availableBalance = parseFloat(document.getElementById('main-balance').innerText)
     if (!isNaN(donateButtonId('first-input')) && donateButtonId('first-input') <= availableBalance && donateButtonId('first-input') > 0) {
         const moneyAmount = donateButtonId('first-input') + cardMoneyId('first-card-money')
-        document.getElementById('my_modal_5').showModal()
+        document.getElementById('my_modal_5').showModal();
         document.getElementById('first-card-money').innerText = moneyAmount;
         const available = availableBalance - donateButtonId('first-input');
         document.getElementById('main-balance').innerText = available;
